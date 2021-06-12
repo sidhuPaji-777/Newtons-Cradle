@@ -7,7 +7,7 @@ class Chain
         var options = {
             bodyA : body1,
             bodyB : body2,
-            length: 100,
+            // length: 500,
             pointB:{x:this.offsetX, y:this.offsetY}
         }
         this.Chain = Constraint.create(options);
@@ -27,7 +27,8 @@ class Chain
 
         var Anchor2X = pointB.x+this.offsetX;
         var Anchor2Y = pointB.y+this.offsetY;
-
+        fill("pink")
+        stroke("pink")
         line(Anchor1X, Anchor1Y, Anchor2X, Anchor2Y);
         // line(pointA.x, pointA.y-26, pointB.x-180, pointB.y);
 
